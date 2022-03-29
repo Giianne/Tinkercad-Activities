@@ -1,0 +1,68 @@
+#include <LiquidCrystal.h>
+#define echo 11
+#define trig 10
+LiquidCrystal lcd(9, 8, 7, 6, 5, 4);
+int trigPin = 10;
+int echoPin = 11;
+int green =3;
+int yellow =12;
+int red =13;
+int buzzer =2;
+long duration;
+int distanceCm, distanceInch;
+
+void setup() {
+lcd.begin(16,2);
+pinMode(trigPin, OUTPUT);
+pinMode(echoPin, INPUT);
+pinMode(green, OUTPUT);
+pinMode(yellow, OUTPUT);
+pinMode(red, OUTPUT);
+pinMode(buzzer, OUTPUT);
+}
+
+void loop() {
+digitalWrite(trigPin, LOW);
+delayMicroseconds(2);
+digitalWrite(trigPin, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin, LOW);
+duration = pulseIn(echoPin, HIGH);
+distanceCm= (duration* (0.0343)) / 2;
+distanceInch = (duration/2) / 74;
+lcd.setCursor(0,0);
+lcd.print("Distance: ");
+lcd.print(distanceCm);
+lcd.print(" cm ");
+delay(10);
+lcd.setCursor(0,1);
+lcd.print("Distance: ");
+lcd.print(distanceInch);
+lcd.print(" Inch ");
+delay(10);
+
+if (distanceCm >= 20)
+{
+digitalWrite(green, HIGH);
+digitalWrite(yellow, LOW);
+digitalWrite(red,LOW);
+digitalWrite(buzzer , LOW);
+}
+else if (distanceCm >= 11)
+{
+digitalWrite(green, LOW);
+digitalWrite(yellow, HIGH);
+digitalWrite(red,LOW);
+digitalWrite(buzzer , LOW); 
+}
+else
+{
+digitalWrite(green, LOW);
+digitalWrite(yellow, LOW);
+digitalWrite(red, HIGH);
+digitalWrite(buzzer , HIGH);
+delay(500);
+  
+}
+
+}
