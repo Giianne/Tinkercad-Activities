@@ -51,8 +51,8 @@ digitalWrite(green, LOW);
 digitalWrite(yellow, LOW);
 digitalWrite(red, HIGH);
 digitalWrite(buzzer , HIGH);
-delay(500);
-  
-}
+tone(buzzer, 1200, 800);
+delay(600);
+  }
 
 }
