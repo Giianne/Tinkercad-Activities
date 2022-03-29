@@ -1,0 +1,617 @@
+#define buzzer 11
+int choice;
+
+
+void setup()
+{
+  
+  pinMode(buzzer, OUTPUT);
+  Serial.begin(9600);
+}
+
+
+
+void Song1(){ 
+  tone(buzzer, 392 , 200);
+  delay(250);
+  tone(buzzer, 587.23 , 200);
+  delay(300);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(300);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(400);
+  tone(buzzer, 392 , 800);
+  delay(1000);
+  tone(buzzer, 392 , 200);
+  delay(320);
+  tone(buzzer, 440 , 200);
+  delay(380);
+  tone(buzzer, 440 , 200);
+  delay(330);
+  tone(buzzer, 392 , 200);
+  delay(350);
+  tone(buzzer, 440 , 200);
+  delay(400);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 800);
+  delay(1000);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(310);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 392 , 700);
+  delay(830);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(310);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 440 , 1000);
+  delay(1500);
+  tone(buzzer, 392 , 200);
+  delay(250);
+  tone(buzzer, 587.23 , 200);
+  delay(300);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(300);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(400);
+  tone(buzzer, 392 , 800);
+  delay(1000);
+  tone(buzzer, 392 , 200);
+  delay(320);
+  tone(buzzer, 440 , 200);
+  delay(380);
+  tone(buzzer, 440 , 200);
+  delay(330);
+  tone(buzzer, 392 , 200);
+  delay(350);
+  tone(buzzer, 440 , 200);
+  delay(400);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 800);
+  delay(1000);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(310);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 392 , 700);
+  delay(830);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(310);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 440 , 1000);
+  delay(1500);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(310);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 783.99 , 600);
+  delay(800);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(310);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 1000);
+  delay(1100);
+  tone(buzzer, 523.25 , 350);
+  delay(450);;
+  tone(buzzer, 493.88 , 350);
+  delay(450);
+  tone(buzzer, 440 , 1500);
+  delay(1600);
+  tone(buzzer, 392 , 1500);
+  delay(1600);
+  tone(buzzer, 493.88 , 1500);
+  delay(1600);
+  tone(buzzer, 440 , 1500);
+  delay(1600);
+  tone(buzzer, 392 , 200);
+  delay(400);
+  tone(buzzer, 440 , 200);
+  delay(300);
+  tone(buzzer, 440 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(300);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 392 , 800);
+  delay(900);
+  tone(buzzer, 392 , 200);
+  delay(400);
+  tone(buzzer, 440 , 200);
+  delay(300);
+  tone(buzzer, 440 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(300);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 440 , 800);
+  delay(900);
+  tone(buzzer, 392 , 200);
+  delay(400);
+  tone(buzzer, 440 , 200);
+  delay(300);
+  tone(buzzer, 440 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(300);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 659.26 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 392 , 200);
+  delay(350);
+  tone(buzzer, 523.25 , 200);
+  delay(350);
+  tone(buzzer, 587.23 , 1000);
+  delay(1200);
+    
+
+}
+
+void Song2(){
+  
+ tone(buzzer, 392, 1000);//A5
+ delay(1500);
+ tone(buzzer, 369.99, 1000);//G#5
+ delay(1000);
+ tone(buzzer, 493.88, 1000);//A5
+ delay(1000);
+ tone(buzzer, 329.63, 1000);//G#5
+ delay(1500); 
+ tone(buzzer, 293.66, 1000);//A5
+ delay(1000);
+ tone(buzzer, 392, 1000);//E5
+ delay(1000);
+ tone(buzzer, 261.63, 1000);//A5
+ delay(1500);
+ tone(buzzer, 493.88, 1000);//D5
+ delay(1000);
+ tone(buzzer, 329.63, 1000);//pause
+ delay(1000);
+ tone(buzzer, 440, 1000);//A4
+ delay(1000);
+ tone(buzzer, 293.66, 1000);//C#4
+ delay(2000);
+
+ tone(buzzer, 392, 1000);//A5
+ delay(1500);
+ tone(buzzer, 369.99, 1000);//G#5
+ delay(1000);
+ tone(buzzer, 493.88, 1000);//A5
+ delay(1000);
+ tone(buzzer, 329.63, 1000);//G#5
+ delay(1500); 
+ tone(buzzer, 293.66, 1000);//A5
+ delay(1000);
+ tone(buzzer, 392, 1000);//E5
+ delay(1000);
+ tone(buzzer, 261.63, 1000);//A5
+ delay(1500);
+ tone(buzzer, 493.88, 1000);//D5
+ delay(1000);
+ tone(buzzer, 329.63, 1000);//pause
+ delay(1000);
+ tone(buzzer, 440, 1000);//A4
+ delay(1000);
+ tone(buzzer, 293.66, 1000);//C#4
+ delay(2000);
+  
+  
+  
+ tone(buzzer, 293.66, 400);//A5
+ delay(400);
+ tone(buzzer, 392, 400);//G#5
+ delay(400);
+ tone(buzzer, 293.66, 400);//A5
+ delay(1000);
+  
+ tone(buzzer, 392, 400);//G#5
+ delay(400); 
+ tone(buzzer, 369.99, 400);//A5
+ delay(400);
+ tone(buzzer, 293.66, 400);//E5
+ delay(1000);
+  
+ tone(buzzer, 369.99, 400);//A5
+ delay(400);
+ tone(buzzer, 392, 400);//D5
+ delay(400);
+ tone(buzzer, 293.66, 400);//pause
+ delay(1000);
+  
+  
+ tone(buzzer, 369.99, 400);//A4
+ delay(400);
+ tone(buzzer, 392, 400);//A4
+ delay(400);
+ tone(buzzer, 369.99, 400);//A4
+ delay(400);
+ tone(buzzer, 329.63, 400);//A4
+ delay(400);
+ tone(buzzer, 293.66, 400);//A4
+ delay(400);
+ tone(buzzer, 329.63, 400);//A4
+ delay(400);
+ tone(buzzer, 261.63, 400);//C#4
+ delay(1000);
+  
+ tone(buzzer, 369.99, 400);//A4
+ delay(400);
+ tone(buzzer, 392, 400);//A4
+ delay(400);
+ tone(buzzer, 369.99, 400);//A4
+ delay(400);
+ tone(buzzer, 329.63, 400);//A4
+ delay(400);
+ tone(buzzer, 261.63, 400);//A4
+ delay(400);
+ tone(buzzer, 329.63, 400);//A4
+ delay(400);
+ tone(buzzer, 261.63, 400);//C#4
+ delay(400);
+
+}
+
+
+void Song3(){ 
+ tone(buzzer, 880, 1000);//A5
+ delay( 400);
+ tone(buzzer, 831, 1000);//G#5
+ delay(400);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 831, 1000);//G#5
+ delay(400);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 659, 1000);//E5
+ delay(400);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 587, 1000);//D5
+ delay(800);
+
+ tone(buzzer, 0, 1000);//pause
+ delay(400);
+
+ tone(buzzer, 440, 1000);//A4
+ delay(200);
+ tone(buzzer, 554, 1000);//C#4
+ delay(200);
+ 
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 831, 1000);//G#5
+ delay(400);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 831, 1000);//G#5
+ delay(400);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 659, 1000);//E5
+ delay(400);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 587, 1000);//D5
+ delay(800);
+
+
+ tone(buzzer, 440, 1000);//A4
+ delay(200);
+ tone(buzzer, 554, 1000);//C#5
+ delay(200);
+
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 831, 1000);//G#5
+ delay(200);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 440, 1000);//A4
+ delay(300);
+ tone(buzzer, 831, 1000);//G#5
+ delay(200);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 440, 1000);//A4
+ delay(300);
+ tone(buzzer, 659, 1000);//E5
+ delay(300);
+ tone(buzzer, 880, 1000);//A5
+ delay(400);
+ tone(buzzer, 440, 1000);//A4
+ delay(300);
+ tone(buzzer, 587, 1000);//D5
+ delay(300);
+ tone(buzzer, 440, 1000);//A4
+ delay(300);
+ tone(buzzer, 554, 1000);//C#5
+ delay(400);
+ tone(buzzer, 587, 1000);//D5
+ delay(400);
+ tone(buzzer, 554, 1000);//C#5
+ delay(400);
+ tone(buzzer, 494, 1000);//B4
+ delay(800); 
+}
+
+void Song4(){ 
+  tone(buzzer, 698);
+  delay(400);
+  tone(buzzer, 784);
+  delay(200);
+  tone(buzzer, 880);
+  delay(400);
+  tone(buzzer, 784);
+  delay(400);
+  tone(buzzer, 698);
+  delay(400);
+  tone(buzzer, 659);
+  delay(400);
+  tone(buzzer, 698);
+  delay(1000);
+  noTone(buzzer);
+  delay(25);
+  tone(buzzer, 698);
+  delay(400);
+  noTone(buzzer);
+  delay(25);
+  tone(buzzer, 698);
+  delay(200);
+  tone(buzzer, 659);
+  delay(400);
+  tone(buzzer, 698);
+  delay(400);
+  tone(buzzer, 659);
+  delay(400);
+  tone(buzzer, 523);
+  delay(400);
+  tone(buzzer, 587);
+  delay(2600);
+  noTone(buzzer);
+  delay(25);
+  tone(buzzer, 587);
+  delay(400);
+  tone(buzzer, 523);
+  delay(200);
+  noTone(25);
+  tone(buzzer, 523); //Start of Double ledger lines
+  delay(3400);
+  noTone(buzzer);
+  delay(800);
+  tone(buzzer, 698);
+  delay(400);
+  tone(buzzer, 784);
+  delay(200);
+  tone(buzzer, 880);
+  delay(400);
+  tone(buzzer, 784);
+  delay(400);
+  tone(buzzer, 698);
+  delay(400);
+  tone(buzzer, 659);
+  delay(400);
+  tone(buzzer, 698);
+  delay(600);
+  noTone(buzzer);
+  delay(400);
+  tone(buzzer, 698);
+  delay(400);
+  tone(buzzer, 784);
+  delay(400);
+  tone(buzzer, 698);
+  delay(600);
+  tone(buzzer, 659);
+  delay(400);
+  tone(buzzer, 523);
+  delay(400);
+  tone(buzzer, 587);
+  delay(1000);
+  noTone(buzzer);
+  delay(1200);
+  tone(buzzer, 523);
+  delay(400);
+  noTone(25);
+  tone(buzzer, 523);
+  delay(400);
+  noTone(25);
+  tone(buzzer, 523);
+  delay(1200);
+  noTone(buzzer); // End of third line
+
+}
+
+void Song5(){ 
+
+  tone(buzzer, 392, 500);
+  delay(400);
+  tone(buzzer, 493, 400);
+  delay(400);
+  tone(buzzer, 493 , 400);
+  delay(400);
+  tone(buzzer, 392 , 400);
+  delay(500);
+  tone(buzzer, 392 , 200);
+  delay(300);
+  tone(buzzer, 329 , 200);
+  delay(300);
+  
+  
+  tone(buzzer, 493, 400);
+  delay(500);
+  tone(buzzer, 440, 400);
+  delay(400);
+  tone(buzzer, 493 , 400);
+  delay(400);
+  tone(buzzer, 340 , 400);
+  delay(400);
+  tone(buzzer, 493 , 300);
+  delay(400);
+  tone(buzzer, 440 , 300);
+  delay(300);
+ 
+  tone(buzzer, 392, 400);
+  delay(400);
+  tone(buzzer, 493, 400);
+  delay(400);
+  tone(buzzer, 493 , 400);
+  delay(400);
+  tone(buzzer, 392 , 400);
+  delay(600);
+  tone(buzzer, 392 , 300);
+  delay(200);
+  tone(buzzer, 329 , 300);
+  delay(300);
+
+  tone(buzzer, 493, 400);
+  delay(500);
+  tone(buzzer, 440, 400);
+  delay(400);
+  tone(buzzer, 493 , 400);
+  delay(400);
+  tone(buzzer, 277 , 400);
+  delay(400);
+  tone(buzzer, 493 , 300);
+  delay(300);
+  tone(buzzer, 440 , 300);
+  delay(400);
+  
+  tone(buzzer, 392, 400);
+  delay(300);
+  tone(buzzer, 493, 400);
+  delay(300);
+  tone(buzzer, 493 , 400);
+  delay(300);
+  tone(buzzer, 392 , 400);
+  delay(500);
+  tone(buzzer, 392 , 300);
+  delay(200);
+  tone(buzzer, 329 , 300);
+  delay(buzzer);
+  
+  tone(buzzer, 493, 400);
+  delay(600);
+  tone(buzzer, 440, 400);
+  delay(400);
+  tone(buzzer, 493 , 400);
+  delay(600);
+  tone(buzzer, 277 , 400);
+  delay(400);
+  tone(buzzer, 493 , 300);
+  delay(400);
+  tone(buzzer, 440 , 300);
+  delay(400);
+  tone(buzzer, 392, 400);
+  delay(300);
+  tone(buzzer, 493 , 300);
+  delay(300);
+  tone(buzzer, 392, 400);
+  delay(300);
+  
+  
+  tone(buzzer, 493, 400);
+  delay(800);
+  tone(buzzer, 440, 400);
+  delay(200);
+  tone(buzzer, 493 , 400);
+  delay(400);
+  tone(buzzer, 440, 400);
+  delay(300);
+  tone(buzzer, 392, 400);
+  delay(400);
+  tone(buzzer, 493 , 400);
+  delay(300);
+  tone(buzzer, 369 , 400);
+  delay(300);
+  
+  tone(buzzer, 392, 400);
+  delay(300);
+  tone(buzzer, 369 , 400);
+  delay(300);
+  tone(buzzer, 392, 400);
+  delay(500);
+  tone(buzzer, 369 , 400);
+  delay(300);
+  tone(buzzer, 392, 400);
+  delay(300);
+  tone(buzzer, 329, 400);
+  delay(300);
+  
+
+}
+
+
+void loop()
+{
+  Serial.print("What Music do you want the program to hear on?\n");
+  Serial.print("Please choose one music below\n");
+  Serial.print("List:\n");
+  Serial.print("Input 1 - Fireflies\n");
+  Serial.print("Input 2 - Welcome to the black parade\n");
+  Serial.print("Input 3 - River flows in you\n");
+  Serial.print("Input 4 - We are one (The Lion King)\n");
+  Serial.print("Input 5 - Havana\n");
+  
+ 	while (Serial.available() == 0)
+    {  
+    }
+  	choice = Serial.parseInt();
+  
+ 	switch (choice) {
+  case 1:
+     Song1();
+    break;
+  case 2:
+      Song2();
+    break;
+    case 3:
+      Song3();
+      break;
+  case 4:
+      Song4();
+      break;
+  case 5:
+      Song5();
+      break;
+  
+}
+}
